@@ -5,17 +5,25 @@
     padding: 0px;
     margin: 0px;
 }
+@font-face {
+    font-family: face;
+    src: url(font/Pacifico-Regular.ttf);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: fontizinha;
+    src: url(font/Lobster-Regular.ttf);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: dancinha;
+    src: url(font/DancingScript-VariableFont_wght.ttf);
+}
 
 :root {
-    --fontt: 'Fjalla One', sans-serif;
-    --fonti: 'Lobster', cursive;
-    --fontn: 'Shadows Into Light', cursive;
+    --font1:face ;
+    --font2:fontizinha;
+    --font3:dancinha;
 }
 
 header {
@@ -25,9 +33,10 @@ header {
     height: 180px;
 }
 header > h1 {
-    font-size: 5vh;
+    font-size: 9vw;
     font-family: var(--fontt);
     padding: 50px 10px 10px 10px;
+    font-family: var(--font2);
 }
 header > p {
     font-variant: small-caps;
@@ -52,6 +61,8 @@ blockquote.normal {
 }
 blockquote.normal > p {
     padding: 30px 0px 50px 20px;
+    font-family: var(--font1);
+    font-size: 6vw;
 }
 
 blockquote.img {
@@ -62,16 +73,16 @@ blockquote.img {
     background-repeat: no-repeat;
 }
 blockquote.img > p {
-    background-color: rgba(169, 169, 169, 0.445);
-    color: white;
+    background-color: rgba(10, 10, 10, 0.445);
+    color: rgb(255, 255, 255);
     display: inline-block;
-    margin: 50px 10px 50px 20px;
+    margin: 50px 50px 50px 10px;
     border-radius: 10px;
     padding: 10px;
-    font-family: var(--fontn);
-    font-size: 4.2vw;
+    font-size: 6vw;
+    font-family: var(--font3);
     line-height: 2.2em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.705);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.836);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.164);
 }
 #chapeleiro {
@@ -86,10 +97,20 @@ blockquote.img > p {
 #raposa {
     background-image: url(imagens/pequeno-principe-e-raposa-1200x800.webp);
 }
-
+.alice::after {
+    content: 'Alice no Pais das Maravilhas';
+    font-size: 10px;
+    
+}
+.pequeno::after {
+    content: 'O Pequeno Príncipe';
+    font-size: 10px;
+    
+}
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
