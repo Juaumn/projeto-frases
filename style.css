@@ -10,12 +10,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
     --fontt: 'Fjalla One', sans-serif;
-    --fonta: 'Pacifico', cursive;
-    --fontp: 'Shadows Into Light', cursive;
+    --fonti: 'Lobster', cursive;
+    --fontn: 'Shadows Into Light', cursive;
 }
 
 header {
@@ -23,7 +23,6 @@ header {
     color: white;
     text-align: center;
     height: 180px;
-    box-shadow: 0px 3px 3px black;
 }
 header > h1 {
     font-size: 5vh;
@@ -31,6 +30,7 @@ header > h1 {
     padding: 50px 10px 10px 10px;
 }
 header > p {
+    font-variant: small-caps;
     padding: 10px;
     background-color: black;
     color: white;
@@ -42,27 +42,49 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-blockquote {
-    padding: 10px;
-    line-height: 2em;
-}
 
 blockquote.normal {
     background-color: white;
     color: black;
-    width: 98vw;
-    box-shadow: inset 5px 5px 5px black;
+    font-family: var(--fontn);
+    font-size: 4vw ;
+    line-height: 2.2em;
+}
+blockquote.normal > p {
+    padding: 30px 0px 50px 20px;
 }
 
 blockquote.img {
-    margin: 10px 10px 10px 20px;
-    border-radius: 10px;
-    padding: 10px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.534);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 blockquote.img > p {
-    background-color: darkgray;
-    color: black;
+    background-color: rgba(169, 169, 169, 0.445);
+    color: white;
     display: inline-block;
+    margin: 50px 10px 50px 20px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: var(--fontn);
+    font-size: 4.2vw;
+    line-height: 2.2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.705);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.164);
+}
+#chapeleiro {
+    background-image: url(imagens/johnny-depp-johnny-depp-mad-hatter-alice-in-wonderland-wallpaper-preview.jpg);
+}
+#gato {
+    background-image: url(imagens/gato.jpg);
+}
+#noite {
+ background-image: url(imagens/noite.jpg!d);
+}
+#raposa {
+    background-image: url(imagens/pequeno-principe-e-raposa-1200x800.webp);
 }
 
 footer {
