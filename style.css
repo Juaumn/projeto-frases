@@ -6,14 +6,16 @@
     margin: 0px;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
-    --fontt: 'Fjalla One', sans-serif;;
-    --fonta: 'Shadows Into Light', cursive;;
-    --fontp: 'Shadows Into Light', cursive;;
+    --fontt: 'Fjalla One', sans-serif;
+    --fonta: 'Pacifico', cursive;
+    --fontp: 'Shadows Into Light', cursive;
 }
 
 header {
@@ -40,8 +42,28 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
+blockquote {
+    padding: 10px;
+    line-height: 2em;
+}
 
+blockquote.normal {
+    background-color: white;
+    color: black;
+    width: 98vw;
+    box-shadow: inset 5px 5px 5px black;
+}
 
+blockquote.img {
+    margin: 10px 10px 10px 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+blockquote.img > p {
+    background-color: darkgray;
+    color: black;
+    display: inline-block;
+}
 
 footer {
     background-color: black;
