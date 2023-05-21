@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root {
+    --fontt: 'Fjalla One', sans-serif;;
+    --fonta: 'Shadows Into Light', cursive;;
+    --fontp: 'Shadows Into Light', cursive;;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 180px;
+    box-shadow: 0px 3px 3px black;
+}
+header > h1 {
+    font-size: 5vh;
+    font-family: var(--fontt);
+    padding: 50px 10px 10px 10px;
+}
+header > p {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
